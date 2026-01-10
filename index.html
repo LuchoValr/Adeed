@@ -1,30 +1,175 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adeed - Inteligencia de Datos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
-<script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adeed – Analítica empresarial inteligente</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-slate-900 overflow-x-hidden">
-    <div id="root"></div>
-<script type="module" src="/index.tsx"></script>
+
+<body class="min-h-screen scroll-smooth">
+
+<!-- Navigation -->
+<nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex items-center cursor-pointer" onclick="scrollToTop()">
+        <span class="text-2xl font-bold text-blue-600 tracking-tight">Adeed</span>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#problema" class="nav-link">Problema</a>
+        <a href="#solucion" class="nav-link">Solución</a>
+        <a href="#funcionamiento" class="nav-link">Cómo funciona</a>
+      </div>
+      <div>
+        <button class="btn btn-primary btn-sm" onclick="openMail()">Agenda una demo</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-16">
+
+<!-- HERO -->
+<section class="relative pt-20 pb-20 lg:pt-32 lg:pb-40 bg-white text-center">
+  <div class="max-w-7xl mx-auto px-4">
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6">
+      Entiende qué está pasando en tu empresa y
+      <span class="text-blue-600">qué deberías estar haciendo mejor</span>
+    </h1>
+    <p class="max-w-3xl mx-auto text-xl text-slate-600 mb-10">
+      Adeed es una plataforma de analítica de datos inteligente que detecta fallas,
+      riesgos y oportunidades antes de que se conviertan en problemas.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <button class="btn btn-primary btn-lg" onclick="openMail()">Agenda una demo</button>
+      <button class="btn btn-outline btn-lg" onclick="scrollToSection('solucion')">Conocer más</button>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section id="problema" class="py-24 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold mb-6">El desafío de dirigir sin visibilidad clara</h2>
+      <p class="text-lg text-slate-600">
+        Muchas empresas toman decisiones con información incompleta.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="card">
+        <h3 class="card-title">Eficiencia Perdida</h3>
+        <p>No sabes dónde se fugan los recursos.</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Riesgos Invisibles</h3>
+        <p>Problemas que crecen en silencio.</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Ceguera de Mercado</h3>
+        <p>No sabes cómo te comparas con el sector.</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Ventaja Competitiva</h3>
+        <p>Otros usan datos mejor que tú.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUCIÓN -->
+<section id="solucion" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
+    <div>
+      <h2 class="text-3xl font-bold mb-6 text-blue-600">¿Qué es Adeed?</h2>
+      <p class="text-lg text-slate-600 mb-8">
+        Adeed combina datos internos con datos del mercado para darte
+        un diagnóstico accionable.
+      </p>
+      <ul class="space-y-4">
+        <li>✔ Análisis operativo profundo</li>
+        <li>✔ Productividad real</li>
+        <li>✔ Comparación con el mercado</li>
+        <li>✔ Identificación de riesgos</li>
+      </ul>
+    </div>
+    <div class="bg-slate-100 rounded-3xl p-6">
+      <img src="https://picsum.photos/800/600?business=1"
+           class="rounded-2xl shadow-xl w-full" />
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="py-32 bg-slate-50 text-center">
+  <h2 class="text-4xl font-bold mb-6">Toma mejores decisiones con datos claros</h2>
+  <p class="text-xl text-slate-600 mb-10">
+    Agenda una demo y descubre qué podrías estar haciendo mejor hoy.
+  </p>
+  <button class="btn btn-secondary btn-lg" onclick="openMail()">Agenda una demo ahora</button>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="border-t py-12 text-center text-slate-400">
+  <p class="font-bold text-slate-900">Adeed</p>
+  <p>© 2026 Adeed Latam. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Scripts -->
+<script>
+  function scrollToSection(id) {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function openMail() {
+    window.location.href =
+      'mailto:contacto@adeed.com?subject=Interés en Adeed - Demo&body=Hola equipo de Adeed, me gustaría agendar una demo.';
+  }
+</script>
+
+<!-- Button + Card Styles -->
+<style>
+  .nav-link {
+    @apply text-slate-600 hover:text-blue-600 font-medium;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center font-semibold rounded-lg transition-all;
+  }
+
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-900 text-white hover:bg-slate-800;
+  }
+
+  .btn-outline {
+    @apply border-2 border-slate-200 text-slate-700 hover:bg-slate-50;
+  }
+
+  .btn-sm { @apply px-4 py-2 text-sm; }
+  .btn-lg { @apply px-8 py-4 text-lg; }
+
+  .card {
+    @apply bg-white p-8 rounded-xl border shadow-sm;
+  }
+
+  .card-title {
+    @apply text-xl font-bold mb-2;
+  }
+</style>
+
 </body>
 </html>
