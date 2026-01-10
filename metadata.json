@@ -1,8 +1,0 @@
-
-{
-  "name": "Adeed - Analítica Inteligente",
-  "description": "Plataforma de analítica de datos inteligente para empresas B2B. Incluye una herramienta interactiva de edición de imágenes impulsada por Gemini 2.5 Flash Image.",
-  "requestFramePermissions": [
-    "camera"
-  ]
-}
