@@ -1,476 +1,409 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adeed - Inteligencia de Datos Estratégica</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="/styles.css" rel="stylesheet">
-    <!-- SEO PRINCIPAL -->
-    <title>Adeed | Chequeo de Salud Empresarial con Inteligencia de Datos</title>
-    <meta name="description" content="Adeed es una plataforma de inteligencia empresarial que analiza la salud financiera, operativa y estratégica de las empresas mediante datos internos y benchmarking de mercado.">
-    <meta name="keywords" content="inteligencia empresarial, análisis de datos empresariales, salud empresarial, benchmarking empresarial, análisis operativo, BI estratégico, Adeed">
-    <meta name="author" content="Adeed Strategic Analytics">
-    <meta name="robots" content="index, follow">
-    <meta name="geo.region" content="CO">
-    <meta name="geo.placename" content="Colombia">
-    <meta name="language" content="es-CO">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="canonical" href="https://www.adeedlatam.com">
-    
+  <!-- SEO PRINCIPAL -->
+  <title>Adeed | Chequeo de Salud Empresarial con Inteligencia de Datos</title>
+  <meta name="description" content="Adeed es una plataforma de inteligencia empresarial que analiza la salud financiera, operativa y estratégica de las empresas mediante datos internos y benchmarking de mercado.">
+  <meta name="keywords" content="inteligencia empresarial, análisis de datos empresariales, salud empresarial, benchmarking empresarial, análisis operativo, BI estratégico, Adeed">
+  <meta name="author" content="Adeed Strategic Analytics">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="CO">
+  <meta name="geo.placename" content="Colombia">
+  <meta name="language" content="es-CO">
+  <link rel="canonical" href="https://www.adeedlatam.com">
 
-    <!-- OPEN GRAPH -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Adeed | Inteligencia de Datos para la Salud Empresarial">
-    <meta property="og:description" content="Diagnóstico empresarial basado en datos reales. Detecta riesgos, ineficiencias y oportunidades ocultas en tu empresa.">
-    <meta property="og:url" content="https://www.adeedlatam.com">
-    <meta property="og:site_name" content="Adeed">
-    <meta property="og:locale" content="es_ES">
-    <meta property="og:image" content="https://www.adeedlatam.com/og-image.jpg">
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Adeed | Inteligencia de Datos para la Salud Empresarial">
+  <meta property="og:description" content="Diagnóstico empresarial basado en datos reales. Detecta riesgos, ineficiencias y oportunidades ocultas en tu empresa.">
+  <meta property="og:url" content="https://www.adeedlatam.com">
+  <meta property="og:site_name" content="Adeed">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:image" content="https://www.adeedlatam.com/og-image.jpg">
 
-    <!-- TWITTER -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Adeed | Chequeo de Salud Empresarial">
-    <meta name="twitter:description" content="Analizamos tu empresa como un médico especialista: datos, riesgos y decisiones claras.">
-    <meta name="twitter:image" content="https://www.adeedlatam.com/og-image.jpg">
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Adeed | Chequeo de Salud Empresarial">
+  <meta name="twitter:description" content="Analizamos tu empresa como un médico especialista: datos, riesgos y decisiones claras.">
+  <meta name="twitter:image" content="https://www.adeedlatam.com/og-image.jpg">
 
-    <!-- SCHEMA.ORG -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Adeed",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "description": "Adeed es una solución de inteligencia empresarial que evalúa la salud financiera, operativa y estratégica de las empresas usando datos internos y benchmarks de mercado.",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "COP"
-      },
-      "provider": {
-        "@type": "Organization",
-        "name": "Adeed Strategic Analytics",
-        "url": "https://www.adeedlatam.com"
-      }
-    }
-    </script>
+  <!-- FUENTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- STYLES -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="/styles.css" rel="stylesheet">
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-        /* Estilos Personalizados */
-        :root {
-            --primary: #2563eb;
-            --primary-hover: #1d4ed8;
-        }
+  <!-- CSS de marca (carga DESPUÉS de Tailwind para poder sobrescribir) -->
+  <link href="/styles.css" rel="stylesheet">
 
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #f8fafc;
-        }
-
-        .glass-nav {
-            background: rgba(255, 255, 255, 0.75);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-        }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .animate-fade-in-up {
-            animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-        }
-
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-        }
-
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f5f9; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
-
-        .feature-card {
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .feature-card:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-        }
-
-        .blob {
-            position: absolute;
-            filter: blur(80px);
-            border-radius: 100%;
-            z-index: -1;
-            animation: float 20s infinite alternate;
-        }
-
-        @keyframes float {
-            0% { transform: translate(0, 0) scale(1); }
-            33% { transform: translate(30px, -50px) scale(1.1); }
-            66% { transform: translate(-20px, 20px) scale(0.9); }
-            100% { transform: translate(0, 0) scale(1); }
-        }
-    </style>
-    <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@19.0.0",
-    "react-dom": "https://esm.sh/react-dom@19.0.0",
-    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
-    "htm": "https://esm.sh/htm@3.1.1",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  <!-- SCHEMA.ORG -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Adeed",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Adeed es una solución de inteligencia empresarial que evalúa la salud financiera, operativa y estratégica de las empresas usando datos internos y benchmarks de mercado.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "COP" },
+    "provider": { "@type": "Organization", "name": "Adeed Strategic Analytics", "url": "https://www.adeedlatam.com" }
   }
-}
-</script>
+  </script>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@19.0.0",
+      "react-dom": "https://esm.sh/react-dom@19.0.0",
+      "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+      "htm": "https://esm.sh/htm@3.1.1",
+      "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+    }
+  }
+  </script>
 </head>
-<body class="text-slate-900 overflow-x-hidden selection:bg-blue-100 selection:text-blue-600">
-<!-- SEO INVISIBLE (NO AFECTA DISEÑO) -->
-<section style="display:none">
-  <h1>Chequeo de Salud Empresarial con Inteligencia de Datos</h1>
-  <h2>Diagnóstico financiero, operativo y estratégico para empresas en Latinoamérica</h2>
-  <p>
-    Adeed ayuda a dueños de empresas y gerentes a identificar riesgos operativos, ineficiencias financieras
-    y oportunidades estratégicas mediante análisis de datos internos y benchmarking sectorial.
-  </p>
-</section>
 
-    <!-- Progress Bar -->
-    <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-blue-600 z-[100] transition-all duration-150" style="width: 0%"></div>
-    
-    <div id="root"></div>
+<body class="text-slate-900 overflow-x-hidden">
+  <!-- SEO INVISIBLE (NO AFECTA DISEÑO) -->
+  <section style="display:none">
+    <h1>Chequeo de Salud Empresarial con Inteligencia de Datos</h1>
+    <h2>Diagnóstico financiero, operativo y estratégico para empresas en Latinoamérica</h2>
+    <p>
+      Adeed ayuda a dueños de empresas y gerentes a identificar riesgos operativos, ineficiencias financieras
+      y oportunidades estratégicas mediante análisis de datos internos y benchmarking sectorial.
+    </p>
+  </section>
 
-    <!-- Background Decoration -->
-    <div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none opacity-40">
-        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-400 rounded-full blur-[120px] animate-pulse"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-300 rounded-full blur-[120px] animate-pulse" style="animation-delay: 2s"></div>
-    </div>
+  <!-- Progress Bar -->
+  <div id="scroll-progress"
+       class="fixed top-0 left-0 h-1 bg-blue-600 z-[100] transition-all duration-150"
+       style="width: 0%"></div>
 
-    <script type="module">
-        import React, { useState, useEffect, useRef } from 'react';
-        import { createRoot } from 'react-dom/client';
-        import htm from 'htm';
+  <div id="root"></div>
 
-        const html = htm.bind(React.createElement);
+  <!-- Background Decoration -->
+  <div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none opacity-40">
+    <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-400 rounded-full blur-[120px] animate-pulse"></div>
+    <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-300 rounded-full blur-[120px] animate-pulse" style="animation-delay: 2s"></div>
+  </div>
 
-        // --- COMPONENTES ---
+  <script type="module">
+    import React, { useEffect, useRef } from 'react';
+    import { createRoot } from 'react-dom/client';
+    import htm from 'htm';
 
-        const Button = ({ children, variant = 'primary', size = 'md', fullWidth = false, className = '', ...props }) => {
-          const variants = {
-            primary: "bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-200 focus:ring-blue-500",
-            secondary: "bg-slate-900 text-white hover:bg-slate-800 hover:shadow-lg hover:shadow-slate-200 focus:ring-slate-700",
-            outline: "border-2 border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-300 focus:ring-slate-200",
-          };
-          const sizes = {
-            sm: "px-5 py-2.5 text-sm",
-            md: "px-7 py-3.5 text-base",
-            lg: "px-10 py-5 text-lg",
-          };
-          const baseStyles = "inline-flex items-center justify-center font-bold transition-all duration-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 active:scale-95";
-          
-          return html`
-            <button 
-              className=${`${baseStyles} ${variants[variant]} ${sizes[size]} ${fullWidth ? 'w-full' : ''} ${className}`}
-              ...${props}
-            >
-              ${children}
-            </button>
-          `;
-        };
+    const html = htm.bind(React.createElement);
 
-        const Section = ({ id, children, className = '', dark = false }) => {
-          const sectionRef = useRef(null);
+    // --- COMPONENTES ---
 
-          useEffect(() => {
-            const observer = new IntersectionObserver(
-              ([entry]) => {
-                if (entry.isIntersecting) {
-                  entry.target.classList.add('active');
-                }
-              },
-              { threshold: 0.1 }
-            );
+    const Button = ({ children, variant = 'primary', size = 'md', fullWidth = false, className = '', ...props }) => {
+      const variants = {
+        primary: "bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-200 focus:ring-blue-500",
+        secondary: "bg-slate-900 text-white hover:bg-slate-800 hover:shadow-lg hover:shadow-slate-200 focus:ring-slate-700",
+        outline: "border-2 border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-300 focus:ring-slate-200",
+      };
+      const sizes = { sm: "px-5 py-2.5 text-sm", md: "px-7 py-3.5 text-base", lg: "px-10 py-5 text-lg" };
+      const baseStyles = "inline-flex items-center justify-center font-bold transition-all duration-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 active:scale-95";
 
-            if (sectionRef.current) {
-              observer.observe(sectionRef.current);
-            }
+      return html`
+        <button
+          className=${`${baseStyles} ${variants[variant]} ${sizes[size]} ${fullWidth ? 'w-full' : ''} ${className}`}
+          ...${props}
+        >
+          ${children}
+        </button>
+      `;
+    };
 
-            return () => observer.disconnect();
-          }, []);
+    const Section = ({ id, children, className = '', dark = false }) => {
+      const sectionRef = useRef(null);
 
-          return html`
-            <section id=${id} ref=${sectionRef} className=${`reveal py-24 lg:py-32 ${dark ? 'bg-slate-900 text-white' : ''} ${className}`}>
-              ${children}
-            </section>
-          `;
-        };
+      useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+          if (entry.isIntersecting) entry.target.classList.add('active');
+        }, { threshold: 0.1 });
 
-        const App = () => {
-          const scrollTo = (id) => {
-            const el = document.getElementById(id);
-            if (el) el.scrollIntoView({ behavior: 'smooth' });
-          };
+        if (sectionRef.current) observer.observe(sectionRef.current);
+        return () => observer.disconnect();
+      }, []);
 
-          const handleNavClick = (e, id) => {
-            e.preventDefault();
-            scrollTo(id);
-          };
+      return html`
+        <section id=${id} ref=${sectionRef} className=${`reveal py-24 lg:py-32 ${dark ? 'bg-slate-900 text-white' : ''} ${className}`}>
+          ${children}
+        </section>
+      `;
+    };
 
-          const openMail = () => {
-            window.location.href = 'mailto:contacto@adeed.com?subject=Interés en Adeed - Demo&body=Hola equipo de Adeed, me gustaría agendar una demo.';
-          };
+    const App = () => {
+      const scrollTo = (id) => {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      };
 
-          return html`
-            <div className="min-h-screen">
-              <!-- Navbar -->
-              <nav className="fixed w-full z-50 glass-nav border-b border-slate-200/50">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center h-20">
-                  <div className="flex-shrink-0 flex items-center cursor-pointer group" onClick=${() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                    <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mr-3 transition-transform group-hover:rotate-12">
-                        <span className="text-white font-black text-xl">A</span>
-                    </div>
-                    <span className="text-2xl font-extrabold text-slate-900 tracking-tight group-hover:text-blue-600 transition-colors">Adeed</span>
-                  </div>
-                  <div className="hidden md:flex space-x-10">
-                    <a href="#problema" onClick=${(e) => handleNavClick(e, 'problema')} className="text-slate-500 hover:text-blue-600 font-semibold transition-colors">Problema</a>
-                    <a href="#solucion" onClick=${(e) => handleNavClick(e, 'solucion')} className="text-slate-500 hover:text-blue-600 font-semibold transition-colors">Solución</a>
-                    <a href="#funcionamiento" onClick=${(e) => handleNavClick(e, 'funcionamiento')} className="text-slate-500 hover:text-blue-600 font-semibold transition-colors">Cómo funciona</a>
-                  </div>
-                  <div>
-                    <${Button} size="sm" onClick=${openMail}>Agenda una demo<//>
-                  </div>
+      const handleNavClick = (e, id) => { e.preventDefault(); scrollTo(id); };
+
+      const openMail = () => {
+        window.location.href = 'mailto:contacto@adeed.com?subject=Interés en Adeed - Demo&body=Hola equipo de Adeed, me gustaría agendar una demo.';
+      };
+
+      return html`
+        <div className="min-h-screen">
+          <!-- Navbar -->
+          <nav className="fixed w-full z-50 glass-nav border-b border-slate-200/50">
+            <div className="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center h-20">
+              <div className="flex-shrink-0 flex items-center cursor-pointer group" onClick=${() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mr-3 transition-transform group-hover:rotate-12">
+                  <span className="text-white font-black text-xl">A</span>
                 </div>
-              </nav>
+                <span className="text-2xl font-extrabold text-slate-900 tracking-tight group-hover:text-blue-600 transition-colors">Adeed</span>
+              </div>
 
-              <main>
-                <!-- Hero Section -->
-                <section className="relative overflow-hidden pt-32 pb-24 lg:pt-48 lg:pb-56">
-                  <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center relative z-10">
-                    <div className="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-wider text-blue-600 uppercase bg-blue-50 rounded-full animate-fade-in-up">
-                        Analítica B2B de Siguiente Generación
-                    </div>
-                    <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-slate-900 tracking-tight mb-8 animate-fade-in-up leading-[1.1]" style=${{ animationDelay: '0.1s' }}>
-                      Entiende tu empresa <br/><span className="text-blue-600">desde los datos</span>
-                    </h1>
-                    <p className="max-w-3xl mx-auto text-xl text-slate-500 mb-12 leading-relaxed animate-fade-in-up" style=${{ animationDelay: '0.2s' }}>
-                      Adeed analiza tu empresa como un médico especialista: detecta fallas, riesgos y oportunidades ocultas para que tomes el control total de tu operación.
-                    </p>
-                    <div className="flex flex-col sm:flex-row justify-center gap-6 animate-fade-in-up" style=${{ animationDelay: '0.3s' }}>
-                      <${Button} size="lg" onClick=${openMail}>Solicitar Demo<//>
-                      <${Button} size="lg" variant="outline" onClick=${() => scrollTo('solucion')}>Ver Metodología<//>
-                    </div>
-                  </div>
-                </section>
+              <div className="hidden md:flex space-x-10">
+                <a href="#problema" onClick=${(e) => handleNavClick(e, 'problema')} className="text-slate-500 hover:text-blue-600 font-semibold transition-colors">Problema</a>
+                <a href="#solucion" onClick=${(e) => handleNavClick(e, 'solucion')} className="text-slate-500 hover:text-blue-600 font-semibold transition-colors">Solución</a>
+                <a href="#funcionamiento" onClick=${(e) => handleNavClick(e, 'funcionamiento')} className="text-slate-500 hover:text-blue-600 font-semibold transition-colors">Cómo funciona</a>
+              </div>
 
-                <!-- Problema -->
-                <${Section} id="problema" className="bg-slate-100/50">
-                  <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <div className="max-w-3xl mx-auto text-center mb-20">
-                      <h2 className="text-4xl font-black mb-6 text-slate-900">¿Sientes que tu empresa tiene "puntos ciegos"?</h2>
-                      <p className="text-lg text-slate-500 font-medium">La mayoría de los líderes toman decisiones basadas en intuición o reportes que llegan tarde.</p>
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                      ${[
-                        { title: "Eficiencia Perdida", desc: "No sabes exactamente dónde se fugan los recursos operativos día a día.", icon: "💸" },
-                        { title: "Riesgos Invisibles", desc: "Factores críticos que crecen en silencio hasta que se convierten en crisis.", icon: "⚠️" },
-                        { title: "Ceguera de Mercado", desc: "No tienes una referencia clara de cómo te comparas con tu sector real.", icon: "🙈" },
-                        { title: "Ventaja Competitiva", desc: "Tu competencia usa datos para ganarte y no sabes cómo responder.", icon: "🏆" }
-                      ].map((item, i) => html`
-                        <div key=${i} className="bg-white p-10 rounded-3xl border border-slate-100 feature-card shadow-sm">
-                          <div className="text-4xl mb-6">${item.icon}</div>
-                          <h3 className="text-xl font-black mb-3 text-slate-900">${item.title}</h3>
-                          <p className="text-slate-500 leading-relaxed">${item.desc}</p>
-                        </div>
-                      `)}
-                    </div>
-                  </div>
-                <//>
-
-                <!-- Solucion -->
-                <${Section} id="solucion" className="bg-white">
-                  <div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-20 items-center">
-                    <div className="relative">
-                      <div className="absolute -top-10 -left-10 w-32 h-32 bg-blue-100 rounded-full -z-10 blur-2xl"></div>
-                      <h2 className="text-4xl font-black mb-8 text-slate-900">Adeed: Tu <span className="text-blue-600">Chequeo Médico</span> Empresarial</h2>
-                      <p className="text-xl text-slate-500 mb-10 leading-relaxed font-medium">Combinamos tus datos internos con inteligencia de mercado para darte una visión 360° de tu negocio.</p>
-                      <ul className="space-y-6">
-                        ${[
-                          "Análisis operativo profundo sin fricción",
-                          "Estrategia comercial basada en evidencia",
-                          "Benchmarking real contra competidores",
-                          "Detección proactiva de riesgos operativos"
-                        ].map((text, i) => html`
-                          <li key=${i} className="flex items-center group">
-                            <div className="w-8 h-8 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mr-4 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-                              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
-                              </svg>
-                            </div>
-                            <span className="text-slate-700 font-bold text-lg">${text}</span>
-                          </li>
-                        `)}
-                      </ul>
-                    </div>
-                    <div className="relative group">
-                      <div className="absolute -inset-4 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-3xl opacity-10 blur-lg group-hover:opacity-20 transition-opacity"></div>
-                      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Adeed Dashboard" className="relative w-full rounded-2xl shadow-2xl border border-slate-200" />
-                    </div>
-                  </div>
-                <//>
-
-                <!-- Funcionamiento -->
-                <${Section} id="funcionamiento" className="bg-slate-50">
-                  <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-black mb-20 text-slate-900">Nuestra Metodología en 4 Pasos</h2>
-                    <div className="grid md:grid-cols-4 gap-12">
-                      ${[
-                        { n: "01", t: "Conectamos", d: "Enlazamos tus fuentes de datos de forma segura y automatizada." },
-                        { n: "02", t: "Comparamos", d: "Tus métricas frente a referencias reales del mercado actual." },
-                        { n: "03", t: "Detectamos", d: "Identificamos fallas críticas y oportunidades de rentabilidad." },
-                        { n: "04", t: "Entregamos", d: "Dashboard interactivo y diagnóstico 100% accionable." }
-                      ].map((step, i) => html`
-                        <div key=${i} className="relative group">
-                          <div className="text-8xl font-black text-slate-200 absolute -top-10 left-1/2 -translate-x-1/2 group-hover:text-blue-100 transition-colors -z-0 select-none">${step.n}</div>
-                          <div className="relative z-10">
-                            <h3 className="text-2xl font-black mb-4 text-slate-900 group-hover:text-blue-600 transition-colors">${step.t}</h3>
-                            <p className="text-slate-500 leading-relaxed font-medium">${step.d}</p>
-                          </div>
-                        </div>
-                      `)}
-                    </div>
-                  </div>
-                <//>
-
-                <!-- Qué Entregamos -->
-                <${Section} dark className="relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-[100px]"></div>
-                  <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-                    <div className="max-w-3xl mx-auto text-center mb-20">
-                      <h2 className="text-4xl font-black mb-6">Qué obtienes con Adeed</h2>
-                      <p className="text-slate-400 text-lg">Entregamos claridad estratégica, no solo archivos.</p>
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      ${[
-                        "Dashboard ejecutivo intuitivo",
-                        "Diagnóstico operativo detallado",
-                        "KPIs estratégicos en tiempo real",
-                        "Benchmarking de mercado regional",
-                        "Hojas de ruta accionables",
-                        "Soporte de analistas expertos"
-                      ].map((text, i) => html`
-                        <div key=${i} className="flex items-center p-8 bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-700 hover:border-blue-500 hover:bg-slate-800 transition-all cursor-default">
-                          <div className="w-10 h-10 bg-blue-600/20 text-blue-400 rounded-lg flex items-center justify-center mr-5">
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4" />
-                            </svg>
-                          </div>
-                          <span className="font-bold text-lg">${text}</span>
-                        </div>
-                      `)}
-                    </div>
-                  </div>
-                <//>
-
-                <!-- Para Quién -->
-                <${Section} className="bg-white">
-                  <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-black mb-20 text-slate-900">¿Es Adeed para tu Empresa?</h2>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      ${[
-                        "Dueños y Directores de Empresas",
-                        "Gerentes que buscan optimización",
-                        "Empresas B2B de Servicios y Productos",
-                        "Negocios en fase de escalamiento",
-                        "Empresas que necesitan datos reales",
-                        "Líderes con visión de crecimiento"
-                      ].map((text, i) => html`
-                        <div key=${i} className="p-10 border-2 border-slate-50 rounded-3xl bg-slate-50/30 hover:bg-blue-50 hover:border-blue-100 transition-all group">
-                          <p className="text-slate-700 font-extrabold text-xl group-hover:text-blue-700 transition-colors">${text}</p>
-                        </div>
-                      `)}
-                    </div>
-                  </div>
-                <//>
-
-                <!-- Diferenciador -->
-                <section className="py-24 bg-blue-600 text-white text-center relative overflow-hidden">
-                  <div className="blob bg-white/20 w-64 h-64 -top-20 -left-20"></div>
-                  <div className="blob bg-white/20 w-64 h-64 -bottom-20 -right-20"></div>
-                  <div className="max-w-4xl mx-auto px-6 relative z-10">
-                    <h2 className="text-4xl sm:text-5xl font-black mb-10 leading-tight">No somos contabilidad. <br/> Somos Estrategia Pura.</h2>
-                    <div className="space-y-8 text-2xl text-blue-50 font-medium">
-                      <p className="leading-relaxed">Adeed no se limita a mostrar gráficas bonitas. <br/> <span className="text-white font-bold">Adeed interpreta, proyecta y soluciona.</span></p>
-                      <div className="pt-8">
-                        <div className="inline-block px-8 py-4 bg-white text-blue-600 rounded-2xl font-black shadow-xl">
-                          Salud Empresarial Continua
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-
-                <!-- CTA Final -->
-                <section id="cta-final" className="py-32 lg:py-48 bg-white text-center px-6">
-                  <div className="max-w-4xl mx-auto">
-                    <h2 className="text-5xl font-black mb-8 text-slate-900 tracking-tight">Toma el control hoy mismo</h2>
-                    <p className="text-2xl text-slate-500 mb-12 font-medium">Agenda tu diagnóstico inicial y descubre el potencial real de tu operación.</p>
-                    <div className="flex flex-col items-center gap-10">
-                      <${Button} variant="secondary" size="lg" className="px-16 py-6 text-2xl shadow-2xl hover:scale-105" onClick=${openMail}>
-                        Agendar Mi Demo Ahora
-                      <//>
-                      <div className="flex flex-col items-center space-y-2">
-                        <p className="text-slate-400 font-bold uppercase tracking-widest text-sm">Contacto Directo</p>
-                        <a href="mailto:contacto@adeedlatam.com" className="text-blue-600 font-black text-2xl hover:text-blue-700 transition-colors underline decoration-blue-200 decoration-4 underline-offset-8">contacto@adeedlatam.com</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </main>
-
-              <footer className="bg-slate-50 border-t border-slate-200 py-20 px-6">
-                <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-slate-500 text-base">
-                  <div className="mb-8 md:mb-0 flex items-center">
-                    <span className="text-2xl font-black text-slate-900 mr-8">Adeed</span>
-                    <span>© 2026 Adeed Strategic Analytics.</span>
-                  </div>
-                  <div className="flex space-x-10 font-bold">
-                    <a href="#" className="hover:text-blue-600 transition-colors">Aviso de Privacidad</a>
-                    <a href="#" className="hover:text-blue-600 transition-colors">Términos de Servicio</a>
-                  </div>
-                </div>
-              </footer>
+              <div>
+                <${Button} size="sm" onClick=${openMail}>Agenda una demo<//>
+              </div>
             </div>
-          `;
-        };
+          </nav>
 
-        const root = createRoot(document.getElementById('root'));
-        root.render(React.createElement(React.StrictMode, null, React.createElement(App)));
+          <main>
+            <!-- Hero Section -->
+            <section className="relative overflow-hidden pt-32 pb-24 lg:pt-48 lg:pb-56">
+              <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center relative z-10">
+                <div className="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-wider text-blue-600 uppercase bg-blue-50 rounded-full animate-fade-in-up">
+                  Analítica B2B de Siguiente Generación
+                </div>
 
-        // Scroll Progress Handler
-        window.addEventListener('scroll', () => {
-            const h = document.documentElement, 
-                  b = document.body,
-                  st = 'scrollTop',
-                  sh = 'scrollHeight';
-            const percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-            const bar = document.getElementById('scroll-progress');
-            if (bar) bar.style.width = percent + '%';
-        });
-    </script>
+                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-slate-900 tracking-tight mb-8 animate-fade-in-up leading-[1.1]" style=${{ animationDelay: '0.1s' }}>
+                  Entiende tu empresa <br/><span className="text-blue-600">desde los datos</span>
+                </h1>
+
+                <p className="max-w-3xl mx-auto text-xl text-slate-500 mb-12 leading-relaxed animate-fade-in-up" style=${{ animationDelay: '0.2s' }}>
+                  Adeed analiza tu empresa como un médico especialista: detecta fallas, riesgos y oportunidades ocultas para que tomes el control total de tu operación.
+                </p>
+
+                <div className="flex flex-col sm:flex-row justify-center gap-6 animate-fade-in-up" style=${{ animationDelay: '0.3s' }}>
+                  <${Button} size="lg" onClick=${openMail}>Solicitar Demo<//>
+                  <${Button} size="lg" variant="outline" onClick=${() => scrollTo('solucion')}>Ver Metodología<//>
+                </div>
+              </div>
+            </section>
+
+            <!-- Problema -->
+            <${Section} id="problema" className="bg-slate-100/50">
+              <div className="max-w-7xl mx-auto px-6 lg:px-8">
+                <div className="max-w-3xl mx-auto text-center mb-20">
+                  <h2 className="text-4xl font-black mb-6 text-slate-900">¿Sientes que tu empresa tiene "puntos ciegos"?</h2>
+                  <p className="text-lg text-slate-500 font-medium">La mayoría de los líderes toman decisiones basadas en intuición o reportes que llegan tarde.</p>
+                </div>
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                  ${[
+                    { title: "Eficiencia Perdida", desc: "No sabes exactamente dónde se fugan los recursos operativos día a día.", icon: "💸" },
+                    { title: "Riesgos Invisibles", desc: "Factores críticos que crecen en silencio hasta que se convierten en crisis.", icon: "⚠️" },
+                    { title: "Ceguera de Mercado", desc: "No tienes una referencia clara de cómo te comparas con tu sector real.", icon: "🙈" },
+                    { title: "Ventaja Competitiva", desc: "Tu competencia usa datos para ganarte y no sabes cómo responder.", icon: "🏆" }
+                  ].map((item, i) => html`
+                    <div key=${i} className="bg-white p-10 rounded-3xl border border-slate-100 feature-card shadow-sm">
+                      <div className="text-4xl mb-6">${item.icon}</div>
+                      <h3 className="text-xl font-black mb-3 text-slate-900">${item.title}</h3>
+                      <p className="text-slate-500 leading-relaxed">${item.desc}</p>
+                    </div>
+                  `)}
+                </div>
+              </div>
+            <//>
+
+            <!-- Solucion -->
+            <${Section} id="solucion" className="bg-white">
+              <div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-20 items-center">
+                <div className="relative">
+                  <div className="absolute -top-10 -left-10 w-32 h-32 bg-blue-100 rounded-full -z-10 blur-2xl"></div>
+                  <h2 className="text-4xl font-black mb-8 text-slate-900">Adeed: Tu <span className="text-blue-600">Chequeo Médico</span> Empresarial</h2>
+                  <p className="text-xl text-slate-500 mb-10 leading-relaxed font-medium">Combinamos tus datos internos con inteligencia de mercado para darte una visión 360° de tu negocio.</p>
+                  <ul className="space-y-6">
+                    ${[
+                      "Análisis operativo profundo sin fricción",
+                      "Estrategia comercial basada en evidencia",
+                      "Benchmarking real contra competidores",
+                      "Detección proactiva de riesgos operativos"
+                    ].map((text, i) => html`
+                      <li key=${i} className="flex items-center group">
+                        <div className="w-8 h-8 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mr-4 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                        <span className="text-slate-700 font-bold text-lg">${text}</span>
+                      </li>
+                    `)}
+                  </ul>
+                </div>
+
+                <div className="relative group">
+                  <div className="absolute -inset-4 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-3xl opacity-10 blur-lg group-hover:opacity-20 transition-opacity"></div>
+                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Adeed Dashboard" className="relative w-full rounded-2xl shadow-2xl border border-slate-200" />
+                </div>
+              </div>
+            <//>
+
+            <!-- Funcionamiento -->
+            <${Section} id="funcionamiento" className="bg-slate-50">
+              <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+                <h2 className="text-4xl font-black mb-20 text-slate-900">Nuestra Metodología en 4 Pasos</h2>
+
+                <div className="grid md:grid-cols-4 gap-12">
+                  ${[
+                    { n: "01", t: "Conectamos", d: "Enlazamos tus fuentes de datos de forma segura y automatizada." },
+                    { n: "02", t: "Comparamos", d: "Tus métricas frente a referencias reales del mercado actual." },
+                    { n: "03", t: "Detectamos", d: "Identificamos fallas críticas y oportunidades de rentabilidad." },
+                    { n: "04", t: "Entregamos", d: "Dashboard interactivo y diagnóstico 100% accionable." }
+                  ].map((step, i) => html`
+                    <div key=${i} className="relative group">
+                      <div className="text-8xl font-black text-slate-200 absolute -top-10 left-1/2 -translate-x-1/2 group-hover:text-blue-100 transition-colors -z-0 select-none">${step.n}</div>
+                      <div className="relative z-10">
+                        <h3 className="text-2xl font-black mb-4 text-slate-900 group-hover:text-blue-600 transition-colors">${step.t}</h3>
+                        <p className="text-slate-500 leading-relaxed font-medium">${step.d}</p>
+                      </div>
+                    </div>
+                  `)}
+                </div>
+              </div>
+            <//>
+
+            <!-- Qué Entregamos -->
+            <${Section} dark className="relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-[100px]"></div>
+
+              <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+                <div className="max-w-3xl mx-auto text-center mb-20">
+                  <h2 className="text-4xl font-black mb-6">Qué obtienes con Adeed</h2>
+                  <p className="text-slate-400 text-lg">Entregamos claridad estratégica, no solo archivos.</p>
+                </div>
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  ${[
+                    "Dashboard ejecutivo intuitivo",
+                    "Diagnóstico operativo detallado",
+                    "KPIs estratégicos en tiempo real",
+                    "Benchmarking de mercado regional",
+                    "Hojas de ruta accionables",
+                    "Soporte de analistas expertos"
+                  ].map((text, i) => html`
+                    <div key=${i} className="flex items-center p-8 bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-700 hover:border-blue-500 hover:bg-slate-800 transition-all cursor-default">
+                      <div className="w-10 h-10 bg-blue-600/20 text-blue-400 rounded-lg flex items-center justify-center mr-5">
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4" />
+                        </svg>
+                      </div>
+                      <span className="font-bold text-lg">${text}</span>
+                    </div>
+                  `)}
+                </div>
+              </div>
+            <//>
+
+            <!-- Para Quién -->
+            <${Section} className="bg-white">
+              <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+                <h2 className="text-4xl font-black mb-20 text-slate-900">¿Es Adeed para tu Empresa?</h2>
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  ${[
+                    "Dueños y Directores de Empresas",
+                    "Gerentes que buscan optimización",
+                    "Empresas B2B de Servicios y Productos",
+                    "Negocios en fase de escalamiento",
+                    "Empresas que necesitan datos reales",
+                    "Líderes con visión de crecimiento"
+                  ].map((text, i) => html`
+                    <div key=${i} className="p-10 border-2 border-slate-50 rounded-3xl bg-slate-50/30 hover:bg-blue-50 hover:border-blue-100 transition-all group">
+                      <p className="text-slate-700 font-extrabold text-xl group-hover:text-blue-700 transition-colors">${text}</p>
+                    </div>
+                  `)}
+                </div>
+              </div>
+            <//>
+
+            <!-- Diferenciador -->
+            <section className="py-24 bg-blue-600 text-white text-center relative overflow-hidden">
+              <div className="blob bg-white/20 w-64 h-64 -top-20 -left-20"></div>
+              <div className="blob bg-white/20 w-64 h-64 -bottom-20 -right-20"></div>
+
+              <div className="max-w-4xl mx-auto px-6 relative z-10">
+                <h2 className="text-4xl sm:text-5xl font-black mb-10 leading-tight">No somos contabilidad. <br/> Somos Estrategia Pura.</h2>
+
+                <div className="space-y-8 text-2xl text-blue-50 font-medium">
+                  <p className="leading-relaxed">Adeed no se limita a mostrar gráficas bonitas. <br/> <span className="text-white font-bold">Adeed interpreta, proyecta y soluciona.</span></p>
+                  <div className="pt-8">
+                    <div className="inline-block px-8 py-4 bg-white text-blue-600 rounded-2xl font-black shadow-xl">
+                      Salud Empresarial Continua
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- CTA Final -->
+            <section id="cta-final" className="py-32 lg:py-48 bg-white text-center px-6">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-5xl font-black mb-8 text-slate-900 tracking-tight">Toma el control hoy mismo</h2>
+                <p className="text-2xl text-slate-500 mb-12 font-medium">Agenda tu diagnóstico inicial y descubre el potencial real de tu operación.</p>
+
+                <div className="flex flex-col items-center gap-10">
+                  <${Button} variant="secondary" size="lg" className="px-16 py-6 text-2xl shadow-2xl hover:scale-105" onClick=${openMail}>
+                    Agendar Mi Demo Ahora
+                  <//>
+
+                  <div className="flex flex-col items-center space-y-2">
+                    <p className="text-slate-400 font-bold uppercase tracking-widest text-sm">Contacto Directo</p>
+                    <a href="mailto:contacto@adeedlatam.com" className="text-blue-600 font-black text-2xl hover:text-blue-700 transition-colors underline decoration-blue-200 decoration-4 underline-offset-8">
+                      contacto@adeedlatam.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+
+          <footer className="bg-slate-50 border-t border-slate-200 py-20 px-6">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-slate-500 text-base">
+              <div className="mb-8 md:mb-0 flex items-center">
+                <span className="text-2xl font-black text-slate-900 mr-8">Adeed</span>
+                <span>© 2026 Adeed Strategic Analytics.</span>
+              </div>
+              <div className="flex space-x-10 font-bold">
+                <a href="#" className="hover:text-blue-600 transition-colors">Aviso de Privacidad</a>
+                <a href="#" className="hover:text-blue-600 transition-colors">Términos de Servicio</a>
+              </div>
+            </div>
+          </footer>
+        </div>
+      `;
+    };
+
+    const root = createRoot(document.getElementById('root'));
+    root.render(React.createElement(React.StrictMode, null, React.createElement(App)));
+
+    // Scroll Progress Handler
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement,
+        b = document.body,
+        st = 'scrollTop',
+        sh = 'scrollHeight';
+      const percent = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+      const bar = document.getElementById('scroll-progress');
+      if (bar) bar.style.width = percent + '%';
+    });
+  </script>
 </body>
 </html>
