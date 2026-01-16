@@ -292,18 +292,18 @@ a { color: inherit; text-decoration: none; }
   overflow: hidden;
    color: white;
 }
-.entregamos-bg::before{
+.entregamos-bg::before {
   content: "";
   position: absolute;
   inset: 0;
   background-image: url("./recurso4.png");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
-  filter: blur(3px);
-  transform: scale(0.85);
-  opacity: 0.75;
-  z-index: 0;
+  filter: none;
+  opacity: 1;
 }
+
 .entregamos-bg::after{
   content: "";
   position: absolute;
