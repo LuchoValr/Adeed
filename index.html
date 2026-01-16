@@ -18,20 +18,25 @@
   <link rel="icon" type="image/png" href="./recurso3.png">
   <link rel="apple-touch-icon" href="./recurso3.png">
 
-  <!-- OPEN GRAPH -->
+  <!-- Imagen para buscador / previews (recurso5) -->
+  <link rel="image_src" href="./recurso5.jpg">
+
+  <!-- OPEN GRAPH (recurso5) -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Adeed | Inteligencia de Datos para la Salud Empresarial">
   <meta property="og:description" content="Diagnóstico empresarial basado en datos reales. Detecta riesgos, ineficiencias y oportunidades ocultas en tu empresa.">
   <meta property="og:url" content="https://www.adeedlatam.com">
   <meta property="og:site_name" content="Adeed">
   <meta property="og:locale" content="es_ES">
-  <meta property="og:image" content="https://www.adeedlatam.com/og-image.jpg">
+  <meta property="og:image" content="./recurso5.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
-  <!-- TWITTER -->
+  <!-- TWITTER (recurso5) -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Adeed | Chequeo de Salud Empresarial">
   <meta name="twitter:description" content="Analizamos tu empresa como un médico especialista: datos, riesgos y decisiones claras.">
-  <meta name="twitter:image" content="https://www.adeedlatam.com/og-image.jpg">
+  <meta name="twitter:image" content="./recurso5.jpg">
 
   <!-- FUENTE -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,9 +47,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- CSS de marca -->
-  <link href="/styles.css" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet">
 
-  <!-- SCHEMA.ORG -->
+  <!-- SCHEMA.ORG (incluye image: recurso5) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -53,6 +58,7 @@
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web",
     "description": "Adeed es una solución de inteligencia empresarial que evalúa la salud financiera, operativa y estratégica de las empresas usando datos internos y benchmarks de mercado.",
+    "image": "./recurso5.jpg",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "COP" },
     "provider": { "@type": "Organization", "name": "Adeed Strategic Analytics", "url": "https://www.adeedlatam.com" }
   }
@@ -94,7 +100,6 @@
 
     const html = htm.bind(React.createElement);
 
-    // Sección con "variant" + clases extra
     const Section = ({ id, children, variant = "base", className = "" }) => {
       const sectionRef = useRef(null);
 
@@ -140,7 +145,6 @@
           <nav className="nav">
             <div className="nav-inner">
               <div className="brand" onClick=${() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                <!-- Logo navbar (recurso1) -->
                 <div className="brand-mark brand-logo">
                   <img src="./recurso1.svg" alt="Adeed" className="brand-img" />
                 </div>
@@ -160,7 +164,7 @@
           </nav>
 
           <main>
-            <!-- HERO (imagen a la izquierda: recurso2) -->
+            <!-- HERO -->
             <section className="hero">
               <div className="hero-overlay"></div>
 
@@ -272,7 +276,7 @@
               </div>
             <//>
 
-            <!-- Qué Entregamos (fondo borroso: recurso4) -->
+            <!-- Qué Entregamos (recurso4 borroso) -->
             <${Section} id="entregamos" variant="dark" className="entregamos-bg">
               <div className="section-head">
                 <h2>Qué obtienes con Adeed</h2>
