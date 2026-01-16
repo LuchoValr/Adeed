@@ -188,7 +188,6 @@
                 </div>
               </div>
 
-
               <div className="hero-blob hero-blob-a"></div>
               <div className="hero-blob hero-blob-b"></div>
             </section>
@@ -208,9 +207,7 @@
                   { title: "Ventaja Competitiva", desc: "Tu competencia usa datos para ganarte y no sabes cómo responder.", icon: "🏆" }
                 ].map((item, i) => html`
                   <div key=${i} className="card">
-                    <div className="card-icon">${item.
-icon}</div>
-
+                    <div className="card-icon">${item.icon}</div>
                     <h3>${item.title}</h3>
                     <p>${item.desc}</p>
                   </div>
@@ -223,9 +220,7 @@ icon}</div>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
                   <div className="kicker">Adeed</div>
-                  <h2>Adeed: Tu <span className="inline-accent">
-Chequeo Médico</span> Empresarial</h2>
-
+                  <h2>Adeed: Tu <span className="inline-accent">Chequeo Médico</span> Empresarial</h2>
                   <p className="lead">
                     Combinamos tus datos internos con inteligencia de mercado para darte una visión 360° de tu negocio.
                   </p>
@@ -269,9 +264,7 @@ Chequeo Médico</span> Empresarial</h2>
                   { n: "04", t: "Entregamos", d: "Dashboard interactivo y diagnóstico 100% accionable." }
                 ].map((step, i) => html`
                   <div key=${i} className="step">
-                    <div className="step-n">${step.n}</
-div>
-
+                    <div className="step-n">${step.n}</div>
                     <h3>${step.t}</h3>
                     <p>${step.d}</p>
                   </div>
@@ -281,7 +274,6 @@ div>
 
             <!-- Qué Entregamos (fondo borroso: recurso4) -->
             <${Section} id="entregamos" variant="dark" className="entregamos-bg">
-
               <div className="section-head">
                 <h2>Qué obtienes con Adeed</h2>
                 <p>Entregamos claridad estratégica, no solo archivos.</p>
@@ -346,9 +338,7 @@ div>
                   <button className="btn primary btn-xl" onClick=${openMail}>Agendar Mi Demo Ahora</button>
 
                   <div className="contact">
-                    <div className="contact-label">
-Contacto Directo</div>
-
+                    <div className="contact-label">Contacto Directo</div>
                     <a href="mailto:contacto@adeedlatam.com" className="contact-mail">contacto@adeedlatam.com</a>
                   </div>
                 </div>
@@ -359,9 +349,7 @@ Contacto Directo</div>
           <footer className="footer">
             <div className="footer-inner">
               <div className="footer-left">
-                <span className="footer-brand">
-Adeed</span>
-
+                <span className="footer-brand">Adeed</span>
                 <span>© 2026 Adeed Strategic Analytics.</span>
               </div>
               <div className="footer-links">
@@ -374,20 +362,16 @@ Adeed</span>
       `;
     };
 
-    const root = createRoot(document.
-getElementById('root'));
+    const root = createRoot(document.getElementById('root'));
     root.render(React.createElement(React.StrictMode, null, React.createElement(App)));
 
     window.addEventListener('scroll', () => {
-
       const h = document.documentElement,
             b = document.body,
             st = 'scrollTop',
             sh = 'scrollHeight';
       const percent = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
-      const bar = document.getElementById('
-scroll-progress');
-
+      const bar = document.getElementById('scroll-progress');
       if (bar) bar.style.width = percent + '%';
     });
   </script>
