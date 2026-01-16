@@ -295,7 +295,7 @@ a { color: inherit; text-decoration: none; }
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("./recurso4.jpg");
+  background-image: url("./recurso4.png");
   background-size: cover;
   background-position: center;
   filter: blur(10px);
