@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>adeed | Chequeo de Salud Empresarial con Inteligencia de Datos</title>
-  <meta name="description" content="adeed es una plataforma de inteligencia empresarial que analiza la salud financiera, operativa y estratégica de las empresas mediante datos internos y benchmarking de mercado.">
-  <meta name="keywords" content="inteligencia empresarial, análisis de datos empresariales, salud empresarial, benchmarking empresarial, análisis operativo, BI estratégico, adeed">
-  <meta name="author" content="adeed Strategic Analytics">
+  <title>adeed | Automatizaciones y Soluciones de Inteligencia Artificial</title>
+  <meta name="description" content="adeed desarrolla automatizaciones y soluciones de inteligencia artificial para empresas y personas. Creamos asistentes, integraciones y flujos que ahorran tiempo, reducen errores y mejoran resultados.">
+  <meta name="keywords" content="automatización, inteligencia artificial, automatizaciones para empresas, soluciones de IA, asistentes virtuales, integraciones, automatización de procesos, IA para negocios, adeed">
+  <meta name="author" content="adeed AI Solutions">
   <meta name="robots" content="index, follow">
   <meta name="geo.region" content="CO">
   <meta name="geo.placename" content="Colombia">
@@ -23,19 +23,19 @@
 
   <!-- OPEN GRAPH (recurso5) -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="adeed | Inteligencia de Datos para la Salud Empresarial">
-  <meta property="og:description" content="Diagnóstico empresarial basado en datos reales. Detecta riesgos, ineficiencias y oportunidades ocultas en tu empresa.">
+  <meta property="og:title" content="adeed | Automatizaciones e Inteligencia Artificial">
+  <meta property="og:description" content="Automatizaciones y soluciones de IA para empresas y personas. Diseñamos sistemas que ahorran tiempo, optimizan procesos y escalan resultados.">
   <meta property="og:url" content="https://www.adeedlatam.com">
   <meta property="og:site_name" content="adeed">
-  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale" content="es_CO">
   <meta property="og:image" content="./recurso5.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   <!-- TWITTER (recurso5) -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="adeed | Chequeo de Salud Empresarial">
-  <meta name="twitter:description" content="Analizamos tu empresa como un médico especialista: datos, riesgos y decisiones claras.">
+  <meta name="twitter:title" content="adeed | Automatizaciones y Soluciones de IA">
+  <meta name="twitter:description" content="Creamos automatizaciones, asistentes e integraciones con inteligencia artificial para empresas y personas.">
   <meta name="twitter:image" content="./recurso5.png">
 
   <!-- FUENTE -->
@@ -49,18 +49,27 @@
   <!-- CSS de marca -->
   <link href="./styles.css" rel="stylesheet">
 
-  <!-- SCHEMA.ORG (incluye image: recurso5) -->
+  <!-- SCHEMA.ORG -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
+    "@type": "ProfessionalService",
     "name": "adeed",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Web",
-    "description": "adeed es una solución de inteligencia empresarial que evalúa la salud financiera, operativa y estratégica de las empresas usando datos internos y benchmarks de mercado.",
+    "url": "https://www.adeedlatam.com",
+    "description": "adeed crea automatizaciones y soluciones de inteligencia artificial para empresas y personas, incluyendo asistentes, integraciones y flujos de trabajo personalizados.",
     "image": "./recurso5.png",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "COP" },
-    "provider": { "@type": "Organization", "name": "adeed Strategic Analytics", "url": "https://www.adeedlatam.com" }
+    "areaServed": "Latinoamérica",
+    "serviceType": [
+      "Automatización de procesos",
+      "Soluciones de inteligencia artificial",
+      "Asistentes virtuales con IA",
+      "Integración de herramientas"
+    ],
+    "provider": {
+      "@type": "Organization",
+      "name": "adeed AI Solutions",
+      "url": "https://www.adeedlatam.com"
+    }
   }
   </script>
 
@@ -80,11 +89,11 @@
 <body class="overflow-x-hidden">
   <!-- SEO INVISIBLE -->
   <section style="display:none">
-    <h1>Chequeo de Salud Empresarial con Inteligencia de Datos</h1>
-    <h2>Diagnóstico financiero, operativo y estratégico para empresas en Latinoamérica</h2>
+    <h1>Automatizaciones y Soluciones de Inteligencia Artificial para Empresas y Personas</h1>
+    <h2>Asistentes, integraciones y flujos automáticos para ahorrar tiempo y escalar resultados</h2>
     <p>
-      adeed ayuda a dueños de empresas y gerentes a identificar riesgos operativos, ineficiencias financieras
-      y oportunidades estratégicas mediante análisis de datos internos y benchmarking sectorial.
+      adeed ayuda a empresas, emprendedores y profesionales a automatizar procesos, conectar herramientas
+      y aplicar inteligencia artificial en tareas comerciales, operativas y de servicio.
     </p>
   </section>
 
@@ -136,7 +145,9 @@
       const handleNavClick = (e, id) => { e.preventDefault(); scrollTo(id); };
 
       const openMail = () => {
-        window.location.href = 'mailto:contacto@adeed.com?subject=Interés en adeed - Demo&body=Hola equipo de adeed, me gustaría agendar una demo.';
+        const subject = encodeURIComponent('Interés en automatización e inteligencia artificial');
+        const body = encodeURIComponent('Hola equipo de adeed, me gustaría conocer sus soluciones de automatización e inteligencia artificial.');
+        window.location.href = `mailto:contacto@adeedlatam.com?subject=${subject}&body=${body}`;
       };
 
       return html`
@@ -152,13 +163,13 @@
               </div>
 
               <div className="nav-links">
-                <a href="#problema" onClick=${(e) => handleNavClick(e, 'problema')} className="nav-link">Problema</a>
-                <a href="#solucion" onClick=${(e) => handleNavClick(e, 'solucion')} className="nav-link">Solución</a>
-                <a href="#funcionamiento" onClick=${(e) => handleNavClick(e, 'funcionamiento')} className="nav-link">Cómo funciona</a>
+                <a href="#problema" onClick=${(e) => handleNavClick(e, 'problema')} className="nav-link">Problemas</a>
+                <a href="#solucion" onClick=${(e) => handleNavClick(e, 'solucion')} className="nav-link">Soluciones</a>
+                <a href="#funcionamiento" onClick=${(e) => handleNavClick(e, 'funcionamiento')} className="nav-link">Cómo trabajamos</a>
               </div>
 
               <div className="nav-cta">
-                <button className="btn primary" onClick=${openMail}>Agenda una demo</button>
+                <button className="btn primary" onClick=${openMail}>Agenda una llamada</button>
               </div>
             </div>
           </nav>
@@ -170,24 +181,25 @@
 
               <div className="hero-wrap">
                 <div className="hero-media">
-                  <img src="./recurso2.png" alt="Ilustración adeed" className="hero-image" />
+                  <img src="./recurso2.png" alt="Ilustración de automatización e inteligencia artificial" className="hero-image" />
                 </div>
 
                 <div className="hero-content hero-content--left">
-                  <div className="badge">Analítica B2B de Siguiente Generación</div>
+                  <div className="badge">Automatización e Inteligencia Artificial Aplicada</div>
 
                   <h1>
-                    Entiende tu empresa <br />
-                    <span className="hero-accent">desde los datos</span>
+                    Automatiza tareas y escala resultados <br />
+                    <span className="hero-accent">con inteligencia artificial</span>
                   </h1>
 
                   <p>
-                    adeed analiza tu empresa como un médico especialista: detecta fallas, riesgos y oportunidades ocultas para que tomes el control total de tu operación.
+                    En adeed creamos automatizaciones y soluciones de IA para empresas y personas:
+                    asistentes, integraciones y flujos que ahorran tiempo, reducen errores y multiplican tu capacidad operativa.
                   </p>
 
                   <div className="actions">
-                    <button className="btn primary" onClick=${openMail}>Solicitar Demo</button>
-                    <button className="btn ghost" onClick=${() => scrollTo('solucion')}>Ver Metodología</button>
+                    <button className="btn primary" onClick=${openMail}>Solicitar Asesoría</button>
+                    <button className="btn ghost" onClick=${() => scrollTo('solucion')}>Ver Soluciones</button>
                   </div>
                 </div>
               </div>
@@ -199,16 +211,16 @@
             <!-- Problema -->
             <${Section} id="problema" variant="alt">
               <div className="section-head">
-                <h2>¿Sientes que tu empresa tiene "puntos ciegos"?</h2>
-                <p>La mayoría de los líderes toman decisiones basadas en intuición o reportes que llegan tarde.</p>
+                <h2>¿Tu trabajo todavía depende de procesos manuales?</h2>
+                <p>Muchas empresas y profesionales pierden tiempo, dinero y oportunidades por operar con tareas repetitivas y herramientas desconectadas.</p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 ${[
-                  { title: "Eficiencia Perdida", desc: "No sabes exactamente dónde se fugan los recursos operativos día a día.", icon: "💸" },
-                  { title: "Riesgos Invisibles", desc: "Factores críticos que crecen en silencio hasta que se convierten en crisis.", icon: "⚠️" },
-                  { title: "Ceguera de Mercado", desc: "No tienes una referencia clara de cómo te comparas con tu sector real.", icon: "🙈" },
-                  { title: "Ventaja Competitiva", desc: "Tu competencia usa datos para ganarte y no sabes cómo responder.", icon: "🏆" }
+                  { title: "Tiempo Perdido", desc: "Horas valiosas se van en tareas repetitivas que podrían ejecutarse solas.", icon: "⏳" },
+                  { title: "Errores Manuales", desc: "Copiar, pegar, responder y hacer seguimiento a mano genera fallos evitables.", icon: "⚠️" },
+                  { title: "Atención Lenta", desc: "Leads, clientes y solicitudes se enfrían cuando no existe automatización.", icon: "💬" },
+                  { title: "Crecimiento Limitado", desc: "Tu operación no escala si cada paso depende de más tiempo humano.", icon: "📈" }
                 ].map((item, i) => html`
                   <div key=${i} className="card">
                     <div className="card-icon">${item.icon}</div>
@@ -224,17 +236,17 @@
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
                   <div className="kicker">adeed</div>
-                  <h2>adeed: Tu <span className="inline-accent">Chequeo Médico</span> Empresarial</h2>
+                  <h2>Automatización e <span className="inline-accent">IA</span> para problemas reales</h2>
                   <p className="lead">
-                    Combinamos tus datos internos con inteligencia de mercado para darte una visión 360° de tu negocio.
+                    Diseñamos soluciones prácticas que conectan tus herramientas, automatizan procesos y ponen la inteligencia artificial a trabajar a tu favor.
                   </p>
 
                   <ul className="list">
                     ${[
-                      "Análisis operativo profundo sin fricción",
-                      "Estrategia comercial basada en evidencia",
-                      "Benchmarking real contra competidores",
-                      "Detección proactiva de riesgos operativos"
+                      "Automatización de tareas administrativas, comerciales y operativas",
+                      "Asistentes con IA para ventas, soporte y gestión interna",
+                      "Integración entre formularios, email y otras plataformas",
+                      "Soluciones personalizadas para empresas, emprendedores y profesionales"
                     ].map((text, i) => html`
                       <li key=${i}>
                         <span className="tick">✓</span>
@@ -248,7 +260,7 @@
                   <div className="media-glow"></div>
                   <img
                     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
-                    alt="adeed Dashboard"
+                    alt="Soluciones de automatización e inteligencia artificial de adeed"
                   />
                 </div>
               </div>
@@ -257,15 +269,15 @@
             <!-- Funcionamiento -->
             <${Section} id="funcionamiento" variant="alt">
               <div className="section-head">
-                <h2>Nuestra Metodología en 4 Pasos</h2>
+                <h2>Cómo trabajamos en 4 pasos</h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                 ${[
-                  { n: "01", t: "Conectamos", d: "Enlazamos tus fuentes de datos de forma segura y automatizada." },
-                  { n: "02", t: "Comparamos", d: "Tus métricas frente a referencias reales del mercado actual." },
-                  { n: "03", t: "Detectamos", d: "Identificamos fallas críticas y oportunidades de rentabilidad." },
-                  { n: "04", t: "Entregamos", d: "Dashboard interactivo y diagnóstico 100% accionable." }
+                  { n: "01", t: "Analizamos", d: "Entendemos tus objetivos, procesos, cuellos de botella y herramientas actuales." },
+                  { n: "02", t: "Diseñamos", d: "Definimos la automatización o solución de IA ideal para tu caso." },
+                  { n: "03", t: "Implementamos", d: "Conectamos plataformas, configuramos flujos y ponemos el sistema en marcha." },
+                  { n: "04", t: "Optimizamos", d: "Medimos resultados y mejoramos continuamente para generar más impacto." }
                 ].map((step, i) => html`
                   <div key=${i} className="step">
                     <div className="step-n">${step.n}</div>
@@ -276,21 +288,21 @@
               </div>
             <//>
 
-            <!-- Qué Entregamos (recurso4 borroso) -->
+            <!-- Qué Entregamos -->
             <${Section} id="entregamos" className="entregamos-bg">
               <div className="section-head">
                 <h2>Qué obtienes con adeed</h2>
-                <p>Entregamos claridad estratégica, no solo archivos.</p>
+                <p>Soluciones útiles, accionables y enfocadas en resultados reales.</p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 ${[
-                  "Dashboard ejecutivo intuitivo",
-                  "Diagnóstico operativo detallado",
-                  "KPIs estratégicos en tiempo real",
-                  "Benchmarking de mercado regional",
-                  "Hojas de ruta accionables",
-                  "Soporte de analistas expertos"
+                  "Automatizaciones a medida",
+                  "Asistentes virtuales con IA",
+                  "Integraciones entre herramientas",
+                  "Procesos más rápidos y con menos errores",
+                  "Flujos de atención y ventas 24/7",
+                  "Acompañamiento estratégico y técnico"
                 ].map((text, i) => html`
                   <div key=${i} className="card card-dark">
                     <div className="chip">✓</div>
@@ -303,17 +315,17 @@
             <!-- Para quién -->
             <${Section} id="paraquien" variant="base">
               <div className="section-head">
-                <h2>¿Es adeed para tu Empresa?</h2>
+                <h2>¿Para quién es adeed?</h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 ${[
-                  "Dueños y Directores de Empresas",
-                  "Gerentes que buscan optimización",
-                  "Empresas B2B de Servicios y Productos",
-                  "Negocios en fase de escalamiento",
-                  "Empresas que necesitan datos reales",
-                  "Líderes con visión de crecimiento"
+                  "Empresas que quieren ahorrar tiempo y costos",
+                  "Equipos comerciales, operativos y administrativos",
+                  "Emprendedores y profesionales independientes",
+                  "Negocios que quieren escalar sin fricción",
+                  "Personas que buscan automatizar su trabajo diario",
+                  "Organizaciones listas para aplicar IA con impacto real"
                 ].map((text, i) => html`
                   <div key=${i} className="pill">${text}</div>
                 `)}
@@ -326,20 +338,20 @@
               <div className="divider-blob divider-blob-b"></div>
 
               <div className="divider-inner">
-                <h2>No somos contabilidad.<br/>Somos Estrategia Pura.</h2>
-                <p>adeed no se limita a mostrar gráficas bonitas. <span>adeed interpreta, proyecta y soluciona.</span></p>
-                <div className="tag">Salud Empresarial Continua</div>
+                <h2>No vendemos humo.<br/>Creamos sistemas que trabajan por ti.</h2>
+                <p>En adeed la inteligencia artificial no es una moda. <span>Es una herramienta concreta para automatizar, asistir y hacer crecer tu operación.</span></p>
+                <div className="tag">IA Aplicada con Resultados</div>
               </div>
             </section>
 
             <!-- CTA Final -->
             <section id="cta-final" className="cta">
               <div className="cta-inner">
-                <h2>Toma el control hoy mismo</h2>
-                <p>Agenda tu diagnóstico inicial y descubre el potencial real de tu operación.</p>
+                <h2>Empieza a automatizar hoy</h2>
+                <p>Cuéntanos tu proceso, reto o idea y te mostraremos cómo convertirlo en una solución real con inteligencia artificial.</p>
 
                 <div className="cta-actions">
-                  <button className="btn primary btn-xl" onClick=${openMail}>Agendar Mi Demo Ahora</button>
+                  <button className="btn primary btn-xl" onClick=${openMail}>Quiero mi asesoría</button>
 
                   <div className="contact">
                     <div className="contact-label">Contacto Directo</div>
@@ -354,7 +366,7 @@
             <div className="footer-inner">
               <div className="footer-left">
                 <span className="footer-brand">adeed</span>
-                <span>© 2026 adeed Strategic Analytics.</span>
+                <span>© 2026 adeed AI Solutions.</span>
               </div>
               <div className="footer-links">
                 <a href="#">Aviso de Privacidad</a>
